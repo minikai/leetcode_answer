@@ -1,0 +1,11 @@
+class Solution(object): 
+  def reverseString(self, s):
+    n = len(s) - 1
+    word = 0
+    while n != -1 : 
+      if n == len(s) - 1 :
+        word = s[n]
+      else :
+        word = word + s[n]
+      n = n - 1 
+    return word
