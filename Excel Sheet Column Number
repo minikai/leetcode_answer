@@ -1,0 +1,12 @@
+class Solution(object):
+    def titleToNumber(self, s):
+        n = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
+        LisT = list(s)
+        d = 1
+        e = 0
+        f = 0
+        for c in LisT:
+            e = (n.index(c)+1)*(26**(len(LisT)-d))
+            f = e + f
+            d = d + 1
+        return f
