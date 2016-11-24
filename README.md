@@ -1,2 +1,2 @@
 # leetcode_answer
-leetcode_answer by python2.x
+leetcode answer by python2.x
